@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Apr  6 17:52:00 2020
+| Date         : Mon Apr  6 20:08:24 2020
 | Host         : ShazPC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file image_top_utilization_synth.rpt -pb image_top_utilization_synth.pb
 | Design       : image_top
@@ -148,12 +148,12 @@ Table of Contents
 +----------+------+---------------------+
 | FDRE     |   57 |        Flop & Latch |
 | OBUF     |   18 |                  IO |
-| LUT6     |   14 |                 LUT |
+| LUT6     |   15 |                 LUT |
 | LUT4     |   11 |                 LUT |
-| LUT5     |    8 |                 LUT |
-| LUT2     |    8 |                 LUT |
+| LUT2     |    9 |                 LUT |
+| LUT5     |    7 |                 LUT |
 | CARRY4   |    7 |          CarryLogic |
-| LUT3     |    6 |                 LUT |
+| LUT3     |    5 |                 LUT |
 | LUT1     |    2 |                 LUT |
 | IBUF     |    1 |                  IO |
 | BUFG     |    1 |               Clock |

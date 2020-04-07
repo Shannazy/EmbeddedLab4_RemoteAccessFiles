@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Apr  6 17:53:07 2020
+| Date         : Mon Apr  6 20:09:24 2020
 | Host         : ShazPC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file image_top_control_sets_placed.rpt
 | Design       : image_top
@@ -48,10 +48,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               8 |            3 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              52 |            7 |
-| Yes          | No                    | No                     |              16 |            8 |
+| No           | Yes                   | No                     |              68 |           14 |
+| Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              40 |            8 |
+| Yes          | Yes                   | No                     |              40 |            7 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -63,8 +63,8 @@ Table of Contents
 +----------------+---------------+---------------------------+------------------+----------------+
 |  myCLK/enable  |               |                           |                1 |              2 |
 |  clk_IBUF_BUFG |               |                           |                2 |              6 |
-|  clk_IBUF_BUFG | myVGA/E[0]    |                           |                8 |             16 |
-|  clk_IBUF_BUFG | myCLK/enable  | myVGA/hcount[9]_i_1_n_0   |                4 |             20 |
+|  clk_IBUF_BUFG |               | myVGA/B_reg[3]            |                7 |             16 |
+|  clk_IBUF_BUFG | myCLK/enable  | myVGA/hcount[9]_i_1_n_0   |                3 |             20 |
 |  clk_IBUF_BUFG | myCLK/enable  | myVGA/vcount[9]_i_1_n_0   |                4 |             20 |
 |  clk_IBUF_BUFG |               | myCLK/counter[26]_i_1_n_0 |                7 |             52 |
 +----------------+---------------+---------------------------+------------------+----------------+

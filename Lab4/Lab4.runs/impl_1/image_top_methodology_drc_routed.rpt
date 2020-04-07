@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Apr  6 17:53:39 2020
+| Date         : Mon Apr  6 20:09:51 2020
 | Host         : ShazPC running 64-bit major release  (build 9200)
 | Command      : report_methodology -file image_top_methodology_drc_routed.rpt -pb image_top_methodology_drc_routed.pb -rpx image_top_methodology_drc_routed.rpx
 | Design       : image_top
@@ -23,323 +23,129 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 62
-+-----------+----------+-----------------------------+------------+
-| Rule      | Severity | Description                 | Violations |
-+-----------+----------+-----------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell | 62         |
-+-----------+----------+-----------------------------+------------+
+             Violations found: 23
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 5          |
+| TIMING-18 | Warning  | Missing input or output delay | 18         |
++-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 TIMING-17#1 Warning
 Non-clocked sequential cell  
-The clock pin myCLK/clk_out_reg/C is not reached by a timing clock
+The clock pin myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#2 Warning
 Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[0]/C is not reached by a timing clock
+The clock pin myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_cooolgate_en_gate_1_cooolDelFlop/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#3 Warning
 Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[10]/C is not reached by a timing clock
+The clock pin myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#4 Warning
 Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[11]/C is not reached by a timing clock
+The clock pin myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#5 Warning
 Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[12]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#6 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[13]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#7 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[14]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#8 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[15]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#9 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[16]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#10 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[17]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#11 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[18]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#12 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[19]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#13 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#14 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[20]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#15 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[21]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#16 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[22]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#17 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[23]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#18 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[24]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#19 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[25]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#20 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[26]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#21 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#22 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#23 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#24 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#25 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#26 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#27 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#28 Warning
-Non-clocked sequential cell  
-The clock pin myCLK/counter_reg[9]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#29 Warning
-Non-clocked sequential cell  
-The clock pin myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#30 Warning
-Non-clocked sequential cell  
-The clock pin myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_cooolgate_en_gate_1_cooolDelFlop/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#31 Warning
-Non-clocked sequential cell  
-The clock pin myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#32 Warning
-Non-clocked sequential cell  
-The clock pin myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#33 Warning
-Non-clocked sequential cell  
 The clock pin myPicture/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
-TIMING-17#34 Warning
-Non-clocked sequential cell  
-The clock pin myPusher/B_reg[3]/C is not reached by a timing clock
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on vga_b[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#35 Warning
-Non-clocked sequential cell  
-The clock pin myPusher/B_reg[4]/C is not reached by a timing clock
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on vga_b[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#36 Warning
-Non-clocked sequential cell  
-The clock pin myPusher/G_reg[3]/C is not reached by a timing clock
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on vga_b[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#37 Warning
-Non-clocked sequential cell  
-The clock pin myPusher/G_reg[4]/C is not reached by a timing clock
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on vga_b[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#38 Warning
-Non-clocked sequential cell  
-The clock pin myPusher/G_reg[5]/C is not reached by a timing clock
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on vga_b[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#39 Warning
-Non-clocked sequential cell  
-The clock pin myPusher/R_reg[2]/C is not reached by a timing clock
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#40 Warning
-Non-clocked sequential cell  
-The clock pin myPusher/R_reg[3]/C is not reached by a timing clock
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#41 Warning
-Non-clocked sequential cell  
-The clock pin myPusher/R_reg[4]/C is not reached by a timing clock
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#42 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/firstRun_reg/C is not reached by a timing clock
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#43 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[0]/C is not reached by a timing clock
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#44 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[1]/C is not reached by a timing clock
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on vga_g[5] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#45 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[2]/C is not reached by a timing clock
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on vga_hs relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#46 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[3]/C is not reached by a timing clock
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on vga_r[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#47 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[4]/C is not reached by a timing clock
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on vga_r[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#48 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[5]/C is not reached by a timing clock
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on vga_r[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#49 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[6]/C is not reached by a timing clock
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on vga_r[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#50 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[7]/C is not reached by a timing clock
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on vga_r[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-17#51 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#52 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/hcount_reg[9]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#53 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#54 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#55 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#56 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#57 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#58 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#59 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#60 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#61 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#62 Warning
-Non-clocked sequential cell  
-The clock pin myVGA/vcount_reg[9]/C is not reached by a timing clock
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on vga_vs relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 

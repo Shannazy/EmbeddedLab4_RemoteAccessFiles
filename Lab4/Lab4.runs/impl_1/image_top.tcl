@@ -76,6 +76,7 @@ set rc [catch {
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   add_files -quiet C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.runs/synth_1/image_top.dcp
   read_ip -quiet c:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/ip/picture/picture.xci
+  read_xdc C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/zybo_old_board.xdc
   link_design -top image_top -part xc7z010clg400-1
   close_msg_db -file init_design.pb
 } RESULT]

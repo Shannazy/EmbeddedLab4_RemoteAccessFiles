@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/new/vga_ctrl.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity vga_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/new/pixel_pusher.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pixel_pusher

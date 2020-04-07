@@ -69,6 +69,10 @@ begin
             R <= pixel(7 downto 5) & "00";
             G <= pixel(4 downto 2) & "000";
             B <= pixel(1 downto 0) & "000";
+        else 
+            R <= (others => '0');
+            G <= (others => '0');
+            B <= (others => '0');
         end if;
     end if;
 end process;

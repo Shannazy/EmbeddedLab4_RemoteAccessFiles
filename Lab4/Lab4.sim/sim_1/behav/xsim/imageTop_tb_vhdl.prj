@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab4.srcs/sources_1/ip/picture/picture_sim_netlist.vhdl" \
+"../../../../Lab4.srcs/sources_1/new/clock_div.vhd" \
+"../../../../Lab4.srcs/sources_1/new/image_top.vhd" \
+"../../../../Lab4.srcs/sources_1/new/pixel_pusher.vhd" \
+"../../../../Lab4.srcs/sources_1/new/vga_ctrl.vhd" \
+"../../../../Lab4.srcs/sim_1/new/imageTop_tb.vhd" \
+
+# Do not sort compile order
+nosort
