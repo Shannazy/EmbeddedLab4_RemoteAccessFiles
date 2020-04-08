@@ -39,9 +39,9 @@ entity pixel_pusher is
            pixel : in STD_LOGIC_VECTOR (7 downto 0);
            hcount : in STD_LOGIC_VECTOR (9 downto 0);
            vid : in STD_LOGIC;
-           R : out STD_LOGIC_VECTOR (4 downto 0):= (others => '0');
-           G : out STD_LOGIC_VECTOR (5 downto 0):= (others => '0');
-           B : out STD_LOGIC_VECTOR (4 downto 0):= (others => '0');
+           R : out STD_LOGIC_VECTOR (4 downto 0);
+           G : out STD_LOGIC_VECTOR (5 downto 0);
+           B : out STD_LOGIC_VECTOR (4 downto 0);
            addr : inout STD_LOGIC_VECTOR (17 downto 0):= (others => '0'));
 end pixel_pusher;
 
@@ -49,23 +49,16 @@ architecture Behavioral of pixel_pusher is
 
 begin
 
---addr Control
-process(clk, vid, enable, hcount, VS)
+process(clk)
 begin
     if (rising_edge(clk)) then
         if(VS = '0') then
             addr <= (others => '0');
-        elsif (enable = '1' and vid = '1' and unsigned(hcount) <480) then 
+        elsif(enable = '1' and vid = '1' and unsigned(hcount) < 480) then
             addr <= std_logic_vector(unsigned(addr)+1);
         end if;
-    end if;
-end process;
-
---RGB Control
-process(clk, enable, vid, hcount)
-begin 
-    if(rising_edge(clk)) then
-        if(enable = '1' and vid = '1' and unsigned(hcount) <480) then
+        
+        if(enable = '1' and vid = '1' and unsigned(hcount) < 480) then
             R <= pixel(7 downto 5) & "00";
             G <= pixel(4 downto 2) & "000";
             B <= pixel(1 downto 0) & "000";

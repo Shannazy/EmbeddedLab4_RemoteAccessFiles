@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Mon Apr  6 15:35:09 2020
+-- Date        : Mon Apr  6 15:35:01 2020
 -- Host        : ShazPC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/ip/picture/picture_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top picture -prefix
+--               picture_ picture_stub.vhdl
 -- Design      : picture
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

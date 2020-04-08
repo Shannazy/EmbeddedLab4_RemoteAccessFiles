@@ -31,14 +31,16 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_output_repo c:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files c:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/matlabOutput.coe
+add_files C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/matlabOutput.coe
+add_files C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/naruto.COE
+add_files C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/NarutoBig.coe
 read_vhdl -library xil_defaultlib {
   C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/new/clock_div.vhd
   C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/new/pixel_pusher.vhd
   C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/new/vga_ctrl.vhd
   C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/new/image_top.vhd
 }
-read_ip -quiet c:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/ip/picture/picture.xci
+read_ip -quiet C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/ip/picture/picture.xci
 set_property used_in_implementation false [get_files -all c:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/Lab4.srcs/sources_1/ip/picture/picture_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -52,6 +54,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/zybo_old_board.xdc
 set_property used_in_implementation false [get_files C:/Users/shazi/Desktop/EmbeddedLab4_RemoteAccessFiles/Lab4/zybo_old_board.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 

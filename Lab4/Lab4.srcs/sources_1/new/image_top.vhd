@@ -71,9 +71,9 @@ component pixel_pusher is
            pixel : in STD_LOGIC_VECTOR (7 downto 0);
            hcount : in STD_LOGIC_VECTOR (9 downto 0);
            vid : in STD_LOGIC;
-           R : out STD_LOGIC_VECTOR (4 downto 0):= (others => '0');
-           G : out STD_LOGIC_VECTOR (5 downto 0):= (others => '0');
-           B : out STD_LOGIC_VECTOR (4 downto 0):= (others => '0');
+           R : out STD_LOGIC_VECTOR (4 downto 0);
+           G : out STD_LOGIC_VECTOR (5 downto 0);
+           B : out STD_LOGIC_VECTOR (4 downto 0);
            addr : inout STD_LOGIC_VECTOR (17 downto 0):= (others => '0'));
 end component pixel_pusher;
 
@@ -81,12 +81,14 @@ end component pixel_pusher;
 component vga_ctrl is
     Port ( clk : in STD_LOGIC;
            enable: in STD_LOGIC;
-           hcount : inout STD_LOGIC_VECTOR (9 downto 0):= (others => '0');
-           vcount : inout STD_LOGIC_VECTOR (9 downto 0):= (others => '0');
+           hcount : inout STD_LOGIC_VECTOR (9 downto 0);
+           vcount : inout STD_LOGIC_VECTOR (9 downto 0);
            vid : out STD_LOGIC;
            hs : out STD_LOGIC;
            vs : out STD_LOGIC);
 end component vga_ctrl;
+
+
 begin
 myCLK : clock_div
 port map (
@@ -95,7 +97,7 @@ port map (
             
 myPicture: picture
 port map (
-            clka => enable,
+            clka => clk,
             addra => addFromPusher,
             douta => pixelOut);
             
@@ -119,9 +121,10 @@ port map(
            hcount => middleHcount,
            vcount => middleVcount, 
            vid => middleVid,
-           vs => vga_vs,
+           vs => middleVS,
            hs => vga_hs);
            
+vga_vs <= middleVS;
           
 end Behavioral; 
     
